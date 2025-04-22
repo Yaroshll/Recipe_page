@@ -25,54 +25,50 @@
     <title>Frontend Mentor | Recipe page</title>
   </head>
   <body>
-    <div class="flex flex-col justify-center items-center md:bg-stone1 md:p-10">
+    <div class="md:flex md:justify-center md:bg-stone1 md:p-15">
       <img
-        class="md:hidden object-cover h-48 w-[360px] "
+      class="md:hidden w-full"
+      src="./assets/images/image-omelette.jpeg"
+      alt="image-omelette"
+    />
+      <div
+        class="grid gap-6 md:gap-5 p-8 md:p-5  max-w-[700px] md:max-w-[670px]  md:rounded-xl  t md:bg-white"
+      >
+      <img
+        class=" w-full  hidden md:block md:rounded-lg"
         src="./assets/images/image-omelette.jpeg"
         alt="image-omelette"
       />
-      <div
-        class=" grid gap-6 md:gap-5 justify-center items-center max-w-[360px] md:max-w-[430px] p-6 md:rounded-lg md:p-4 md:min-h-fit md:bg-white"
-      >
-        <img
-          class=" md:h-30 md:w-full hidden md:block md:rounded-lg "
-          src="./assets/images/image-omelette.jpeg"
-          alt="image-omelette"
-        />
-        <p
-          class="font-Young_Serif font-normal text-3xl md:text-[20px] pt-4 md:pt-0"
-        >
+       
+
+        <p class="font-Young_Serif font-normal text-3xl pt-4 md:pt-0">
           Simple Omelette Recipe
         </p>
-        <p
-          class="font-outfit font-normal text-text md:text-[10px] md:pr-0 p-0 text-stone600"
-        >
+        <p class="font-outfit font-normal text-text text-stone600">
           An easy and quick dish, perfect for any meal. This classic omelette
           combines beaten eggs cooked to perfection, optionally filled with your
           choice of cheese, vegetables, or meats.
         </p>
-        <div class="rounded-lg bg-rose50 md:p-3 pt-5 pb-5 pl-10 text-text">
-          <p class="text-rose800/85 text-text font-bold pb-4 md:pb-2">
+        <div class="rounded-lg bg-rose50  py-5  font-outfit">
+          <p class="text-rose800 font-bold text-[17px] px-5 ">
             Preparation time
           </p>
           <ul
-            class="w-[160px] md:w-full list-disc list-outside md:list-inside [&_li]:pl-4 [&_li]:text-[12px] [&_li]:font-['outfit'] [&_li_b]:text-[15px] [&_li]:leading-5 [&_li]:font-medium [&_li]:text-stone600"
+            class=" pt-4 list-disc [&_li]:text-text [&_li]:pl-3 px-11 [&_li::marker]:text-[13px] [&_li]:leading-5 [&_li]:font-medium [&_li]:text-stone600"
           >
-            <li class="pb-5 md:pb-1 ">
-              <b>Total</b>: Approximately 10 minutes
-            </li>
+            <li class="pb-5 md:pb-1"><b>Total</b>: Approximately 10 minutes</li>
             <li class="pb-3 md:pb-1"><b>Preparation</b>: 5 minutes</li>
-            <li class=""><b>Cooking</b>: 5 minutes</li>
+            <li ><b>Cooking</b>: 5 minutes</li>
           </ul>
         </div>
         <div>
           <p
-            class="font-Young_Serif text-grown800 text-3xl md:text-lg font-normal pl-0 pb-5 md:pb-3"
+            class="font-Young_Serif text-grown800 text-3xl md:text-lg font-normal "
           >
             Ingredients
           </p>
           <ul
-            class="font-outfit list-disc list-outside md:list-inside [&_li]:pb-2 md:[&_li]:pb-1 [&_li]:pl-4 md:[&_li]:pl-2 [&_li]:text-stone600 [&_li]:text-[12px] [&_li]:font-semibold [&_li]:text-balance"
+            class="font-outfit list-disc py-4 px-6 [&_li]:pl-3 [&_li]:leading-7 [&_li::marker]:text-[13px] [&_li]:text-stone600 [&_li]:text-text [&_li]:font-semibold [&_li]:text-balance"
           >
             <li>2-3 large eggs</li>
             <li>Salt, to taste</li>
@@ -84,15 +80,15 @@
           </ul>
         </div>
         <hr class="text-stone150" />
-        <div class="list-inside md:list-inside p-3 md:p-0 ">
+        <div class=" md:p-0">
           <p
-            class="font-Young_Serif text-grown800 text-3xl md:text-lg font-normal pl-0 pb-3"
+            class="font-Young_Serif text-grown800 text-3xl md:text-lg font-normal "
           >
             Instructions
           </p>
 
           <ol
-            class="md:text-[10px] md:font-medium list-decimal font-['outfit'] [&_li::marker]:text-grown800 [&_li::marker]:font-bold [&_li]:text-stone600 [&_li]:pl-4"
+            class="list-decimal  pl-6 font-['outfit'] [&_li::marker]:text-grown800 [&_li::marker]:font-bold [&_li]:text-stone600 [&_li]:pl-4"
           >
             <li>
               <b> Beat the eggs</b>: In a bowl, beat the eggs with a pinch of
@@ -136,19 +132,19 @@
           >
             Nutrition
           </p>
-          <p class="text-text md:text-[10px] text-balance text-stone600 font-medium md:font-normal">
+          <p class="text-text  text-stone600 font-medium">
             The table below shows nutritional values per serving without the
             additional fillings.
           </p>
 
           <div
-            class="md:font-normal font-['outfit'] font-medium [&_div]:flex [&_div_p]:w-full [&_div_p]:p-3 md:[&_div_p]:p-2 md:[&_div_p]:pl-5 [&_div]:w-70 md:[&_div]:w-full [&_div_p]:nth-[1]:text-stone600 [&_div_p]:nth-[2]:text-grown800 [&_div_p]:nth-[2]:font-semibold"
+            class="font-outfit pl-5 pt-5  [&_div_p]:w-full font-medium [&_div]:flex  [&_div_p]:p-3 md:[&_div_p]:p-2 md:[&_div_p]:pl-5 [&_div_p]:nth-[1]:text-stone600 [&_div_p]:nth-[2]:text-grown800 [&_div_p]:nth-[2]:font-semibold"
           >
             <div>
               <p>Calories</p>
               <p>277kcal</p>
             </div>
-            <div class="border-t-1 border-b-1 border-stone150">
+            <div class="border-t-1 border-b-1 border-stone150 " >
               <p>Carbs</p>
               <p>0g</p>
             </div>
